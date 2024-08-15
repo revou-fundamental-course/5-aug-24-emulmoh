@@ -1,0 +1,64 @@
+<form class="container">
+    <h2 class="heading">Registrasi</h2>
+    <div class="steps-container">
+        <hr>
+        <hr class="active">
+        <div class="steps"><i class="fa-solid fa-user"></i></div>
+        <div class="steps"><i class="fa-solid fa-envelope"></i></div>
+        <div class="steps"><i class="fa-solid fa-key"></i></div>
+        <div class="steps"><i class="fa-solid fa-trophy"></i></div>
+    </div>
+    
+    <div class="input-slide-contianer">
+        <scroller>
+            <div class="input-slide">
+            <h3>Nama Pengguna</h3>
+            <ul class="rules">
+
+                <li>Nama pengguna Anda hanya boleh berisi huruf, angka, garis bawah, atau tanda hubung. </li>
+                <li>Tidak diperbolehkan menggunakan spasi atau karakter khusus.</li>
+            </ul>
+            <input type="text" placeholder="Ketik nama pengguna" name="username" class="username">
+            <div class="full-name"><input type="text" placeholder="Nama depan" name="firstname">
+                <input type="text" name="lastname" class="lastname" placeholder="Nama belakang"></div>
+            <button class="button-nex" onclick="NextSlide(1)">Lanjut</button>
+              <p><i>created by mohmulyadi333@gmail.com</i></p>
+        </div>
+        <div class="input-slide user-detail">
+            <h3>Email</h3>
+            <ul class="rules">
+              <li>Silakan masukkan alamat email yang valid dalam format "contoh@gmail.com".</li>
+              <li>Kami menghargai privasi Anda dan tidak akan pernah menggunakan alamat email Anda untuk tujuan yang tidak sah.</li>
+            </ul>
+            <input type="email" name="email" class="email" placeholder="Email">
+
+            
+            <button class="button-nex" onclick="NextSlide(2)">Lanjut</button>
+          <p><i>created by mohmulyadi333@gmail.com</i></p>
+        </div>
+        <div class="input-slide password-slide">
+            <h3>Kata Sandi</h3>
+            <ul class="rules">
+                <li>Sertakan campuran huruf besar dan kecil, angka, dan karakter khusus.</li>
+                <li>Hindari penggunaan kata sandi yang umum atau mudah ditebak.</li>
+            </ul>
+            <input type="password" name="password" class="password" placeholder="Kata sandi">
+            <input type="password" name="confirm-password" class="confirm-password" placeholder="Konfirmasi kata sandi">
+            <button class="button-nex" onclick="NextSlide(3)">Lanjut</button>
+          <p><i>created by mohmulyadi333@gmail.com</i></p>
+        </div>
+        <div class="input-slide finish-slide">
+            <h3>Selamat!</h3>
+            <p><i>Anda telah menyelesaikan semua langkah yang diperlukan untuk pendaftaran.</i></p>
+            <ul class="rules">
+            <li> Kami sangat memperhatikan privasi dan keamanan pengguna kami, dan penting bahwa semua informasi yang diberikan akurat dan terkini.</li> 
+            <li>Setelah Anda mengonfirmasikan bahwa semuanya sudah selesai, klik saja tombol Kirim.</li>
+            </ul> 
+          
+            <button type="submit" class="button-nex" disabled>Kirim</button>
+          <p><i>created by mohmulyadi333@gmail.com</i></p>
+        </div>
+    </scroller> 
+    </div>
+  <button class="GoBack" onclick="GoBack()"><i class="fa-solid fa-arrow-left"></i></button> 
+</form>
